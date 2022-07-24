@@ -1,0 +1,171 @@
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  background-color: #464646;
+  text-align: center;
+}
+
+#text {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1,
+h2 {
+  color: #f0f8ff;
+}
+
+h1 {
+  margin-top: 110px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Roboto-Thin"; 
+}
+
+h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 1,5rem;
+  font-family: "Roboto-Medium"; 
+}
+
+[type="text"],
+[type="password"] {
+  width: 25%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(226, 202, 202, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 0;
+  color: #ffffff;
+  font-size: medium;
+}
+
+::placeholder {
+  color: #ffffff;
+  padding-left: 15px;
+}
+
+[type="text"]:hover,
+[type="password"]:hover {
+  background-color: rgba(179, 91, 91, 0.1);
+  border: 1px solid #ffffff;
+  transition: background-color 0.15s ease-in-out ;
+}
+
+button {
+  background-color: #e0cadb;
+  color: #000000;
+  width: 25%;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[type="submit"],
+button {
+  cursor: pointer;
+}
+
+label {
+  color: #e0cadb;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  color: #f0f8ff;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+[type="submit"] {
+  background-color: #f5f5dc;
+  color: #000000;
+  font-size: 12pt;
+  width: 12%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+[type="submit"]:hover {
+  background-color: #000000;
+  color:#f5f5dc;
+  transition: background-color 0.15s ease-in-out ;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("fonts/Roboto-Thin.ttf") format("truetype");
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("fonts/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.checkbox + label {
+  position: relative;
+  padding: 0 0 0 0;
+  cursor: pointer;
+}
+
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  background: #e0cadb;
+  transition: 0.2s;
+}
+
+label::before {
+  display: inline-block;
+  font: 15px "Arial";
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0;
+  width: 30px;
+  height: 30px;
+}
+
+input:checked + label:before {
+  content: "✓";
+  color: #000000;
+}
+
+.checkbox:checked + label:before {
+  background: #e0cadb;
+}
